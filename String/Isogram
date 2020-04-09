@@ -1,0 +1,15 @@
+/*Given a string S of lowercase aplhabets, check if it is isogram or not.
+ *An Isogram is a string in which no letter occurs more than once.
+**/
+
+static boolean isIsogram(String data){
+    //Your code here
+    int[] res = new int[256];
+    for(char c: data.toCharArray())
+    {
+        res[c]++;
+        if(res[c]>1)
+            return false;
+    }
+    return true;
+}
