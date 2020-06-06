@@ -1,3 +1,8 @@
+/**
+* Time complexity = O(n)
+* Space complexity = O(h) i.e., height of th binary tree
+*/
+
 package trees;
 
 public class DepthFirstTraversal {
